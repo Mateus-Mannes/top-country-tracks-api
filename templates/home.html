@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>top tracks around the world</title>
+    </head>
+    <body>
+        <p>Hi, this is an api to get the top tracks of a country</p>
+        <ul>
+        {% for country in countries%}
+                <li><a href="/top-tracks-{{ country }}">{{ country }}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
