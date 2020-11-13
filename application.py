@@ -13,7 +13,7 @@ def home():
 
 @app.route("/top-tracks-<country>")
 def toptracks(country):
-    country.replace("\xa0", " ")
+    print(country)
     spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
     playlist = get_top_tracks_playlist(country)
     tracks = SpotifyPlaylistTopTracks(playlist)
