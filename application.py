@@ -19,3 +19,14 @@ def toptracks(country):
     playlist = get_top_tracks_playlist(country)
     tracks = SpotifyPlaylistTopTracks(playlist)
     return {'Musics': tracks.get_musics(), 'Artists': tracks.get_artists(), 'Genres': tracks.get_genres()}
+
+@app.route("/all")
+def allcountries():
+    countries = get_countries()
+    all_top_tracks = {'Musics': [], 'Artists': [], 'Genres': []}
+    for country in countries:
+        top_tracks = toptracks(country)
+        all_top_tracks['Musics'] += top_tracks['Musics']
+        all_top_tracks['Artists'] += top_tracks['Artists']
+        all_top_tracks['Genres'] += top_tracks['Genres']
+    return all_top_tracks
