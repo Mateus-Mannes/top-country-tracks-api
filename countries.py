@@ -129,7 +129,7 @@ def get_countries():
         'United States',
         'Uruguay',
         'Vietnam',
-        'Global
+        'Global'
     )
     return countries
   
