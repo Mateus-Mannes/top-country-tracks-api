@@ -60,7 +60,8 @@ def get_top_tracks_playlist(country):
     'United Kingdom':['37i9dQZEVXbLnolsZ8PSNw','United Kingdom'],
     'United States':['37i9dQZEVXbLRQDuF5jeBp','United States'],
     'Uruguay':['37i9dQZEVXbMJJi3wgRbAy','Uruguay'],
-    'Vietnam':['37i9dQZEVXbLdGSmz6xilI','Vietnam']
+    'Vietnam':['37i9dQZEVXbLdGSmz6xilI','Vietnam'],
+     'Global':['37i9dQZEVXbMDoHDwVN2tF', 'Global']
     }
 
     return playlists[country]
@@ -127,7 +128,8 @@ def get_countries():
         'United Kingdom',
         'United States',
         'Uruguay',
-        'Vietnam'
+        'Vietnam',
+        'Global
     )
     return countries
   
